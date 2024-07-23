@@ -1,0 +1,139 @@
+.main-content__corousel__visuallyhidden {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    opacity: 0;
+    
+  }
+
+  .main-content__corousel{
+    display: flex;
+    width: 100%;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .main-content__carousel__title{
+    font-size: 30px;
+    color: #3498DB;
+    padding-top: 50px;
+    text-align: center;
+  }
+ 
+  .main-content__corousel__items {
+    padding: 20px;
+    margin-top: 2em;
+  }
+  
+  .main-content__corousel__card__carousel {
+    --card-width: 80%;
+    --card-max-width: 280px;
+    --card-height: 350px;
+    --carousel-min-width: 600px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter .3s ease;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .main-content__corousel__card__carousel {
+      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    }
+  }
+  
+  .main-content__corousel__card__carousel.smooth-return {
+    transition: all .2s ease;
+  }
+  
+  .main-content__corousel__card__carousel .main-content__corousel__card {
+    background: #3498DB;
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 250px;
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    color: #ffffff;
+    transition: inherit;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .main-content__corousel__card.highlight {
+    filter: brightness(1)
+  }
+  
+  
+  .main-content__corousel__card:nth-of-type(1) .main-content__corousel__image__container {
+      background-image: url("../images/Lugares/NovaYork.jpg");
+  }
+   
+  .main-content__corousel__card:nth-of-type(2) .main-content__corousel__image__container {
+    background-image: url("../images/Lugares/UyuniBolivia.jpg")
+  }
+  
+  .main-content__corousel__card:nth-of-type(3) .main-content__corousel__image__container {
+    background-image: url("../images/Lugares/DesertoAtacamaPeru.jpg")
+  }
+  .main-content__corousel__card:nth-of-type(4) .main-content__corousel__image__container {
+    background-image: url("../images/Lugares/huarazPeru.jpg")
+  }
+  .main-content__corousel__card:nth-of-type(5) .main-content__corousel__image__container {
+    background-image: url("../images/Lugares/VancouverCanada.jpg")
+  }
+  
+  
+  
+  .main-content__corousel__image__container {
+    width: 15em;
+    height: 15em;
+    position: relative;
+    background-size: cover;
+    margin-bottom: 2em;
+    border-radius: 100%;
+    padding: 1em;
+    -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
+    
+  }
+  
+  .main-content__corousel__image__container::after {
+    display: block;
+    width: 120%;
+    height: 120%;
+    border: solid 3px rgba(0,0,0,.1);
+    border-radius: 100%;
+    position: absolute;
+    top: calc(-10% - 3px);
+    left: calc(-10% - 3px);
+  }
+  
+  
+  h2 a {
+    color: #f5b916
+  }
+
+  @media screen and (max-width:800px){
+    .main-content__corousel{
+      display: none;
+      width: 100%;
+      margin: 20px;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
