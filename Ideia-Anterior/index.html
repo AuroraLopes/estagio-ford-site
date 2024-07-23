@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-carousel.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="./images/kisspng-airplane-logo-graphic-designer-logo-design-5ac0b6ec65bb97.4862237715225791804167.png" alt="" class="logo">
+        <section class="header-elements">
+            <a href="#" class="header-home">Home</a>
+            <a href="#" class="header-home">Pacotes</a>
+            <a href="#" class="header-home">Contate-nos</a>
+        </section>
+        <a href="" class="header-sign-btn">Sign</a>
+
+        <section class="dropdown">
+            <button onclick="myFunction()" class="btn-dropdown">Menu</button>
+            <section id="myDropdown" class="dropdown-content">
+                <a href="#" class="header-home">Home</a>
+                <a href="#" class="header-home">Pacotes</a>
+                <a href="#" class="header-home">Contate-nos</a>
+            </section>
+        </section>
+    </header>
+
+    <main>
+        <section class="main-content">
+            <section class="background-image">
+                <div class="main-text">
+                    <h1 id="title-image">Os melhores pacotes <h1 id="title-image"> você encontra aqui!</h1></h1>
+                    <p id="text-image"> Para voce que busca praticidade, conforto e preço <br>
+                    justo na hora de viajar.Somos mais que uma <br> agência de viagens; 
+                    somos seu parceiro na realização dos <br> seus sonhos de explorar o mundo. 
+                    Com destinos exóticos,<br> pacotes exclusivos e atendimento personalizado, 
+                    garantimos <br> experiências únicas e momentos memoráveis para cada tipo de viajante </p>
+                </div>
+                
+                <button class="btn-main-image"> Adquira aqui! </button>
+    
+                <div class="assessment">
+                        <div class="nota">
+                            <h2  style="font-size:40px">4.6</h2>
+                            <p  style="font-size:20px">Nota na <br> AppStore</p></tr>
+                        </div>
+                        <div class="passagens-vendidas">
+                            <h2  style="font-size:40px">200k+</h2>
+                            <p  style="font-size:20px">Passagens <br> Vendidas!</p>
+                        </div>
+                            
+                </div>           
+            </section>
+
+            <section class="main-content__carousel__mobile">
+                <h1 id="main-content__destinos__title__mobile"> Os Lugares Mais Visitados</h1>
+                <div class="main-content__destinos__list__wrapper__mobile">
+                    <ul class="main-content__destinos__list__mobile">
+                      <li class="main-content__destinos__item__mobile">
+                        <h1 id="title-carousel__lugares"> Nova York - EUA </h1>
+                        <div class="main-content__destinos__content__mobile" id="item1"></div>
+                      </li>
+                      <li class="main-content__destinos__item__mobile">
+                        <h1 id="title-carousel__lugares"> Uyuni - Bolivia </h1>
+                        <div class="main-content__destinos__content__mobile" id="item2"></div>
+                      </li>
+                      <li class="main-content__destinos__item__mobile">
+                        <h1 id="title-carousel__lugares"> Huaraz - Peru</h1>
+                        <div class="main-content__destinos__content__mobile" id="item3"></div>
+                       </li>
+                      <li class="main-content__destinos__item__mobile">
+                        <h1 id="title-carousel__lugares">Deserto de Atacama - Chile</h1>
+                        <div class="main-content__destinos__content__mobile" id="item4"></div>
+                      </li>
+                      <li class="main-content__destinos__item__mobile">
+                        <h1 id="title-carousel__lugares">Vancouver - Canadá</h1>
+                        <div class="main-content__destinos__content__mobile" id="item5"></div>
+                      </li>
+                    </ul>
+                    
+                  </div>
+                  <button onclick="handleClick('previous')" class="button button--previous" type="button">⭠</button>
+                  <button onclick="handleClick('next')" class="button button--next" type="button">➜</button>
+            </section>
+
+            
+        </section> 
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
