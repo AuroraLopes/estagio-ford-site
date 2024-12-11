@@ -338,6 +338,9 @@ class CardCarousel extends DraggingEvent {
   }
 }
 
+
+
+
 const carousel = new CardCarousel(cardsContainer)
 
 const slider = document.querySelector(".main-content__destinos__list__wrapper__mobile");

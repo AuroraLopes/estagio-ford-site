@@ -35,6 +35,7 @@
     .main-content__destinos__item__mobile {
       display: flex;
       flex-shrink: 0;
+      cursor: grab;
       width: 100%;
       row-gap: 20px;
       column-gap: 20px;
